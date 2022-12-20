@@ -1,0 +1,17 @@
+footer {
+    background-color: black;
+    height: 4rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 0;
+    font-family: 'Varela Round', sans-serif;
+    margin-top: 3rem;
+}
+
+footer .info {
+    color: white;
+    z-index: 9999;
+}

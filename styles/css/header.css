@@ -1,0 +1,72 @@
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 3.5rem;
+}
+
+header .contain-filters {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-width: 65%;
+    font-family: 'Varela Round', sans-serif;
+}
+
+header .contain-filters button {
+    background-color: rgba(161, 216, 50, 0.373);
+    border: none;
+    font-size: 0.7rem;
+    border-radius: 3px;
+    padding: 2px 4px;
+    color: white;
+}
+
+header #link-home {
+    font-family: PokeSolid;
+    color: yellowgreen;
+    font-size: 1.5rem;
+}
+
+@media (min-width: 768px) {
+    
+    header {
+        height: 5rem;
+    }
+
+    header .contain-filters {
+        min-width: 30%;
+        width: 45%;
+    }
+
+    header .contain-filters button{
+        font-size: 1.4rem;
+        transition: all ease-in-out 0.3s;
+    }
+
+    header #link-home{
+        font-size: 2.2rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    
+    header .contain-filters button:hover {
+        cursor: pointer;
+        transform: scale(1.2)
+    }
+
+    header #link-home:hover{
+        cursor: pointer;
+        text-shadow: -3px 3px 3px rgb(0, 8, 255);
+        animation: vibrate ease-in-out 0.5s;
+    }
+
+    @keyframes vibrate {
+        0% { transform: rotateZ(0deg);}
+        35% { transform: rotateZ(10deg); }
+        70% { transform: rotateZ(-10deg); transform: scale(1.1); }
+        100% { transform: rotateZ(0deg); }
+    }
+
+}

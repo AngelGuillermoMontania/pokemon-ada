@@ -1,0 +1,14 @@
+@import url('./normalize.css');
+@import url('./header.css');
+@import url('./home.css');
+@import url('./footer.css');
+
+@font-face {
+    font-family: PokeSolid;
+    src: url('../fonts/PokemonSolid.ttf');
+}
+
+@font-face {
+    font-family: PokeHollow;
+    src: url('../fonts/PokemonHollow.ttf');
+}

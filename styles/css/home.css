@@ -1,0 +1,151 @@
+.home {
+    background-image: url('../images/ash-y-pikachu_mobile.jpg');
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.home main .contain-cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem 0;
+    min-height: 100vh;
+}
+
+.home main .contain-cards #img-loading{
+    height: 5rem;
+    position: relative;
+    animation: mover ease-in-out 15s;
+}
+
+@keyframes mover {
+    0% { left: -50vw }
+    100% { left: 50vw; }
+}
+
+.home main .contain-cards .card {
+    height: 10rem;
+    width: 90%;
+    background-color: rgba(255, 255, 255, 0.553);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 12px;
+    box-shadow: inset 0px 0px 30px 5px white;
+}
+
+.home main .contain-cards .card .img-pokemon {
+    height: 100%;
+    width: 40%;
+    border-radius: 10px 0 0 10px;
+}
+
+.home main .contain-cards .card .contain-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 55%;
+    height: 100%;
+    font-family: 'Varela Round', sans-serif;
+}
+
+.home main .contain-pages {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home main .contain-pages button{
+    font-weight: bold;
+    border-radius: 3px;
+    padding: 4px 8px;
+    border: solid 1px black;
+    margin: 0 5px;
+}
+
+.desactived {
+    color: rgba(128, 128, 128, 0.488);
+    background-color: rgba(0, 0, 0, 0.435);
+}
+
+
+@media (min-width: 768px) {
+    
+    .home main .contain-cards .card {
+        height: 16rem;
+    }
+
+    .home main .contain-cards .card .contain-info {
+        font-size: 1.2rem;
+    }
+
+    .home main .contain-pages button{
+        font-size: 1.5rem;
+        transition: all ease-in-out 0.2s;
+    }
+    
+}
+
+@media (min-width: 1024px) {
+    
+    .home {
+        background-image: url('../images/ash-y-pikachu_desktop.jpg');
+    }
+
+    .home main .contain-cards {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    
+    .home main .contain-cards .card {
+        width: 45%;
+        margin: 1rem 0;
+        height: 12rem;
+        transition: all ease-in-out 1s;
+    }
+
+    .home main .contain-cards .card:hover {
+        box-shadow: inset 0px 0px 30px 150px white;
+        background-color: white;
+        transform: scale(1.1);
+    }
+
+    .home main .contain-cards .card .contain-info {
+        font-size: 1rem;
+    }
+
+    .home main .contain-pages button:hover{
+        cursor: pointer;
+        transform: scale(1.2);
+    }
+
+    .home main .contain-pages .desactived:hover {
+        cursor: auto;
+        transform: scale(1);
+    }
+
+}
+
+@media (min-width: 1440px) {
+    
+    .home {
+        background-image: url('../images/ash-y-pikachu_desktop.jpg');
+    }
+
+    .home main .contain-cards {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    
+    .home main .contain-cards .card {
+        width: 32rem;
+        margin: 1rem 0;
+    }
+
+    .home main .contain-cards .card .contain-info {
+        font-size: 1rem;
+    }
+
+}
